@@ -1,0 +1,56 @@
+:root {
+  --primary: #0077ff;
+  --bg: #fff;
+  --text: #333;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--bg);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.brand {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.links a.active {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.btn {
+  background: var(--primary);
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}

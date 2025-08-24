@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillCraft</title>
+  <style>
+    /* === NAVBAR STYLING === */
+    :root {
+      --primary: #007bff;
+      --bg: #ffffff;
+      --text: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-padding-top: 70px; /* Fixes anchor jump under navbar */
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: var(--bg);
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+      z-index: 1000;
+    }
+
+    header .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    header ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    header ul li a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    header ul li a.active,
+    header ul li a:hover {
+      color: var(--primary);
+    }
+
+    header .btn {
+      background: var(--primary);
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    /* === PAGE SECTIONS === */
+    section {
+      padding: 100px 50px;
+    }
+
+    #hero {
+      background: #f5f9ff;
+      text-align: center;
+    }
+
+    #hero h1 {
+      font-size: 36px;
+      color: var(--primary);
+    }
+
+    #features h2 {
+      font-size: 28px;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f9f9f9;
+      border-top: 1px solid #ddd;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- === NAVBAR === -->
+  <header>
+    <a href="index.html" class="logo">SkillCraft</a>
+    <ul class="links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html" class="btn">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- === HERO SECTION === -->
+  <section id="hero">
+    <h1>Welcome to SkillCraft</h1>
+    <p>Learn skills and showcase your portfolio with ease.</p>
+  </section>
+
+  <!-- === FEATURES SECTION === -->
+  <section id="features">
+    <h2>Our Features</h2>
+    <ul>
+      <li>🚀 Responsive Navigation Bar</li>
+      <li>📂 Portfolio Showcase</li>
+      <li>📧 Contact Form</li>
+    </ul>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer>
+    © SkillCraft 2025
+  </footer>
+</body>
+</html>
